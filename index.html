@@ -5,7 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../area_of_triangle/style.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+    <style>*{
+        margin:0px;
+        padding: 0px;
+    }
+    
+    #container{
+        margin-left: 40%;
+        margin-top: 10%;
+        border: 1px black solid;
+        margin-right: 40%;
+        padding: 40px;
+        /* box-shadow: grey ; */
+        box-shadow:10px 10px  grey   ;
+    
+    }
+    #ans
+    {
+        background-color: orange;
+        padding: 20px;
+        font-size: large;
+        font-weight: 600;
+        /* border: 2px ora dotted ; */
+        box-shadow: 5px 4px rgb(204, 140, 20);
+    }
+    #head{
+        padding-left: 34%;
+        margin-top: 90px;
+        font-size: 50px;
+        color: rgb(77, 74, 74);
+    
+    }</style>
 </head>
 <body>
     <h1 id="head">Find Area of triangle</h1>
@@ -26,6 +57,17 @@
         <p1 id="par">Area of triangle is :</p1>
         </div>
     </form>
-    <script src="../area_of_triangle/form1.js"></script>
+    <script >let h;
+        let w;
+        let area;
+        console.log("hello");
+        document.getElementById("sub").onclick=function()
+        {
+            h=document.getElementById("hei").value;
+            w=document.getElementById("wei").value;
+            area=0.5 * h* w ;
+            console.log(area);
+            document.getElementById("par").innerHTML="Area of triangle is :"+area;
+        }</script>
 </body>
 </html>
